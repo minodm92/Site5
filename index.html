@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>카페 필터 검색</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <p id="skipNav"><a href="#content">본문 바로가기</a></p>
+
+        <div id="wrap">
+            <main id="content" class="demo-canvas">
+                <section class="map-filter" aria-label="카페 지도 필터" data-node-id="4029:201">
+                    <div class="map-filter__map" aria-hidden="true">
+                        <img src="images/map-filter-map.png" alt="" />
+                    </div>
+
+                    <header class="map-filter__search">
+                        <div class="map-filter__search-bar">
+                            <button class="map-filter__icon-button" type="button" aria-label="이전으로">
+                                <img src="images/icon-back.svg" alt="" />
+                            </button>
+
+                            <label class="map-filter__search-field">
+                                <img class="map-filter__search-icon" src="images/icon-search.svg" alt="" />
+                                <span class="map-filter__search-text">카페</span>
+                                <button class="map-filter__clear-button" type="button" aria-label="검색어 지우기">
+                                    <img src="images/icon-cancel.svg" alt="" />
+                                </button>
+                            </label>
+                        </div>
+
+                        <nav class="map-filter__category-list" aria-label="장소 카테고리">
+                            <button class="map-filter__category map-filter__category--icon map-filter__category--selected" type="button" aria-label="필터 열기">
+                                <img src="images/icon-filter.svg" alt="" />
+                            </button>
+                            <button class="map-filter__category map-filter__category--selected" type="button">
+                                <img src="images/icon-cafe.svg" alt="" />
+                                <span>카페</span>
+                            </button>
+                            <button class="map-filter__category" type="button">
+                                <img src="images/icon-restaurant.svg" alt="" />
+                                <span>음식점</span>
+                            </button>
+                            <button class="map-filter__category" type="button">
+                                <img src="images/icon-car.svg" alt="" />
+                                <span>드라이브</span>
+                            </button>
+                            <button class="map-filter__category" type="button">
+                                <img src="images/icon-bed.svg" alt="" />
+                                <span>숙소</span>
+                            </button>
+                            <button class="map-filter__category" type="button">
+                                <img src="images/icon-parking.svg" alt="" />
+                                <span>주차장</span>
+                            </button>
+                        </nav>
+                    </header>
+
+                    <aside class="filter-sheet" aria-label="필터">
+                        <div class="filter-sheet__handle" aria-hidden="true">
+                            <span></span>
+                        </div>
+
+                        <div class="filter-sheet__headline">
+                            <h1>필터</h1>
+                            <button class="filter-sheet__close" type="button" aria-label="필터 닫기">
+                                <img src="images/icon-close.svg" alt="" />
+                            </button>
+                        </div>
+
+                        <div class="filter-sheet__contents">
+                            <section class="filter-sheet__section" aria-labelledby="mood-title">
+                                <h2 id="mood-title">분위기</h2>
+                                <ul class="filter-sheet__chips">
+                                    <li><button class="filter-chip filter-chip--selected" type="button">포토스팟</button></li>
+                                    <li><button class="filter-chip" type="button">무드가 예쁜</button></li>
+                                    <li><button class="filter-chip" type="button">대화하기 좋은</button></li>
+                                    <li><button class="filter-chip" type="button">이국적인 분위기</button></li>
+                                    <li><button class="filter-chip" type="button">뷰가 좋은</button></li>
+                                    <li><button class="filter-chip" type="button">플랜테리어</button></li>
+                                </ul>
+                            </section>
+
+                            <section class="filter-sheet__section" aria-labelledby="purpose-title">
+                                <h2 id="purpose-title">목적</h2>
+                                <ul class="filter-sheet__chips">
+                                    <li><button class="filter-chip" type="button">독서/스터디</button></li>
+                                    <li><button class="filter-chip filter-chip--selected" type="button">작업하기 좋은</button></li>
+                                    <li><button class="filter-chip" type="button">데이트하기 좋은</button></li>
+                                    <li><button class="filter-chip" type="button">오래 머물기 좋은</button></li>
+                                    <li><button class="filter-chip" type="button">아이 동반 가능</button></li>
+                                </ul>
+                            </section>
+
+                            <section class="filter-sheet__section" aria-labelledby="facility-title">
+                                <h2 id="facility-title">편의시설</h2>
+                                <ul class="filter-sheet__chips">
+                                    <li><button class="filter-chip" type="button">콘센트 있음</button></li>
+                                    <li><button class="filter-chip" type="button">Wi-Fi 잘 터짐</button></li>
+                                    <li><button class="filter-chip filter-chip--selected" type="button">좌석이 넉넉한</button></li>
+                                    <li><button class="filter-chip" type="button">주차 가능</button></li>
+                                    <li><button class="filter-chip" type="button">반려동물 동반 가능</button></li>
+                                </ul>
+                            </section>
+                        </div>
+
+                        <div class="filter-sheet__actions">
+                            <button class="filter-sheet__button filter-sheet__button--outline" type="button">초기화</button>
+                            <button class="filter-sheet__button filter-sheet__button--primary" type="button">검색</button>
+                        </div>
+                    </aside>
+                </section>
+            </main>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>
